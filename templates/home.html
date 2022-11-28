@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'home.css')}}">
+</head>
+
+<body>
+    <nav id="main-navbar">
+        <ul>
+          <li><a href="{{url_for('home')}}">Home</a></li>
+          <li><a href="{{url_for('view')}}">View</a></li>
+          <li><a href="{{url_for('addUser')}}">AddUsers</a></li>
+          <li><a href="{{url_for('deleteUser')}}">DeleteUser</a></li>
+          <li><a href="{{url_for('logout')}}">Logout</a></li>
+        </ul>
+      </nav>
+      <h1>Vaccination Data Application</h1>
+</body>
+
+</html>
